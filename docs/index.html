@@ -44,14 +44,14 @@
 -->
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Docker & Jenkins</title>
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JIRA</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
     <!-- -->
     <!-- jQuery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -78,1021 +78,191 @@
                 document.getElementsByClassName(footerTogether).style.display = 'initial';
             </script>
             <span style="padding-right:25%">
-				Welcome to our Presentation about
+				Welcome to my Presentation about
 			</span>
             <span style="padding-left:30%">
-				<img src="res/jenkins_and_docker.png" width="70%">
+				<img src="Images/Jira_(software)-Logo.wine.svg" width="70%">
 			</span>
         </section>
         <!-- ToC -->
         <section>
             <h2>Contents</h2>
             <ol type="1">
-                <li>Docker</li>
-                <li>Jenkins</li>
-                <li>Interconnection</li>
+                <li>What is Jira ?</li>
+                <li>What are the key features of Jira?</li>
+                <li>The benefits of Jira</li>
+                <li>The Cons of Jira?</li>
+                <li>Live Demo</li>
             </ol>
         </section>
     </div>
     <div class="slides" id="docker" style="">
-        <!-- Title Page -->
+        <!-- What is Jira -->
         <section>
-            <aside class="notes">
-                <ul>
-                    <li>Welcome to my Part of this Presentation about Docker</li>
-                    <li>roughly 20 to 25 minutes</li>
-                    <ul>
-                        <li>10 - 15 Minutes about Theory</li>
-                        <li>10 Minutes Demo about Docker in Dockerplayground</li>
+            <section>
+                <aside class="notes">
+                    <ol>
+                        <li>What is Jira ?</li>
+                        <li>Left: Monolith</li>
                         <ul>
-                            <li>Mounting</li>
-                            <li>Docker Commands</li>
-                            <li>etc</li>
+                            <li>Everything "clues" together</li>
+                            <li>Inseparable</li>
+                            <li>Big Construct with no possibility to change some Parts</li>
+                            <li>interlocked parts</li>
                         </ul>
-                    </ul>
-                </ul>
-            </aside>
-            <img width="80%"
-                 src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg">
-        </section>
-        <!-- TOC -->
-        <section>
-            <aside class="notes">
+                        <li>Right: Microservices</li>
+                        <ul>
+                            <li>Splitting the UI into many Microservices</li>
+                            <li>Many positive Aspects</li>
+                            <li>Easy to change some Components</li>
+                            <li>UI as a composition of many Microservices</li>
+                            <ol>
+                                <li>Searchbar</li>
+                                <li>Prompt</li>
+                                <li>My Account</li>
+                            </ol>
+                        </ul>
+                    </ol>
+                </aside>
+                <h1>What is Jira ?</h1>
+                <img width="50%" style="border-radius: 8px;"
+                     src="Images/jira1.png">
+            </section>
+            <section>
+                <h3> A bug tracing and project management software that ...</h3>
                 <ol>
-                    <li>Two Big Topics to deal with</li>
-                    <li>IT Landscape is Changing</li>
-                    <ol>
-                        <li>Introduction why we could use Docker</li>
-                        <li>Background</li>
-                    </ol>
-                    <li>Docker</li>
-                    <ol>
-                        <li>What is it?</li>
-                        <li>History</li>
-                        <li>Example Architecture</li>
-                        <li>Live Demo</li>
-                    </ol>
+                    <li>Manage Agile and Scrum teams</li>
+                    <li>Organize your project tasks</li>
+                    <li>Capture and record software bugs</li>
                 </ol>
-            </aside>
-            <h1>Contents</h1>
+            </section>
+            <section>
+                <h1>History of Jira</h1>
+                <ol>
+                    <li> Launched by Atlassian in 2002</li>
+                    <li> Named by Gojira/Godzilla</li>
+                    <li> firstly only a issue tracking software for developer</li>
+                    <li> later adopted by a non-IT organization as a pm tool</li>
+                    <li> 2012 third party dev. plugins</li>
+                </ol>
+            </section>
+            <section>
+                <h1> Which packages do they offer ?</h1>
+                <ol>
+                    <li>Jira Core: The basic Jira project and task management platform for non-technical users</li>
+                    <li>Jira Software: A specialized version of the tool, specially built for software developers</li>
+                    <li>Jira Service Desk: A platform for customer support and IT professionals. While Service Desk is a
+                        key JIRA package, it’s not a project management tool
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h1>Who can use it ?</h1>
+                <h2>Jira can be used by all types of teams and businesses</h2>
+                <ol>
+                    <li>Software Development: Developers use Jira’s features to manage their projects using Scrum or
+                        Kanban boards
+                    </li>
+                    <li>Marketing: Marketers use Jira to manage complex projects like events and product launches (which
+                        involve working with multiple teams)
+                    </li>
+                    <li>HR: HR professionals can streamline their hiring and onboarding processes by creating custom
+                        workflows with Jira
+                    </li>
+                </ol>
+            </section>
+        </section>
+        <!-- What are the Key features of Jira ?-->
+        <section>
+            <section>
+            <h1>What Are the Key Features of Jira?</h1>
             <ol>
-                <li>The IT Landscape is changing....</li>
-                <ol>
-                    <li>Container Concept</li>
-                    <li>Why are we using this Concept?</li>
-                </ol>
-                <li>Docker</li>
-                <ol>
-                    <li>What is Docker?</li>
-                    <li>History of Docker</li>
-                    <li>Docker Architecture</li>
-                    <li>Example of a Docker Workflow</li>
-                    <li>Live Demo</li>
-                    <li>Docker Compose and Swarm</li>
-                </ol>
+                <li>Powerful Agile views</li>
+                <li>Custom workflows</li>
+                <li>Roadmaps</li>
+                <li>Detailed reports</li>
             </ol>
-        </section>
-        <!-- IT Change -->
-        <section>
-            <aside class="notes">
+            </section>
+            <section>
+                <h1>Powerful Agile views</h1>
+                <img width="50%" style="border-radius: 8px;"
+                     src="Images/jira2.png">
+            </section>
+            <section>
+                <h1>Custom workflows</h1>
+                <p>A Jira workflow is a set of processes that need to be followed in order to complete a task or resolve
+                    an issue…</p>
+                <img width="50%" style="border-radius: 8px;"
+                     src="Images/jira3.png">
+            </section>
+            <section>
+                <h1> Roadmaps</h1>
+                <h2>Jira Portfolio</h2>
                 <ol>
-                    <li>First we come to the IT Landscape change</li>
-                    <li>Left: Monolith</li>
-                    <ul>
-                        <li>Everything "clues" together</li>
-                        <li>Inseparable</li>
-                        <li>Big Construct with no possibility to change some Parts</li>
-                        <li>interlocked parts</li>
-                    </ul>
-                    <li>Right: Microservices</li>
-                    <ul>
-                        <li>Splitting the UI into many Microservices</li>
-                        <li>Many positive Aspects</li>
-                        <li>Easy to change some Components</li>
-                        <li>UI as a composition of many Microservices</li>
-                        <ol>
-                            <li>Searchbar</li>
-                            <li>Prompt</li>
-                            <li>My Account</li>
-                        </ol>
-                    </ul>
-                </ol>
-            </aside>
-            <h1>Change of the IT Landscape</h1>
-            <img width="50%" style="border-radius: 8px;"
-                 src="https://res.cloudinary.com/practicaldev/image/fetch/s--seen3BGm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://user-images.githubusercontent.com/2697570/49395813-cd094980-f737-11e8-9e9a-6c20db5720c4.jpg">
-        </section>
-        <!-- Container Concept-->
-        <section>
-            <!-- -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Note to the Container Concept and how it works</li>
-                    </ol>
-                </aside>
-                <h1>The Container Concept</h1>
-                <img width="30%" src="res/container.png">
-            </section>
-            <!-- Docker Image-->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Imagine some Independent Units for every Part of your project</li>
-                        <li>f.e. A Webserver-container, a Database-container etc</li>
-                    </ol>
-                </aside>
-                <img width="40%" ,
-                     style="border-radius: 8px;"
-                     src="https://cs-geonode.readthedocs.io/en/2.8_a/_images/docker.png">
-            </section>
-            <!-- Terms -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Now we get to the Important Terms</li>
-                    </ol>
-                </aside>
-                <h1>Important Terms</h1>
-            </section>
-            <!-- Layer -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Layer are Parts of Images</li>
-                        <li><a href="https://hub.docker.com/layers/nginx/library/nginx/latest/images/sha256-89ac93d6b02111dddd1c6259cfb782a429da265b97c8391f453693a9bcb81957?context=explore">Link to Example</a> </li>
-                        <li>A Layer Could be many Things</li>
-                        <ul>
-                            <li>CMD Command</li>
-                            <li>Files</li>
-                            <li>ENV Variables</li>
-                            <li>Opening Ports</li>
-                            <li>etc....</li>
-                        </ul>
-                    </ol>
-                </aside>
-                <h1>Layer</h1>
-                <p class="fragment" data-fragment-index="1">Part of an Image</p>
-                <p class="fragment" data-fragment-index="2">Could be Files or Command</p>
-                <p class="fragment" data-fragment-index="3"><img
-                        src="https://miro.medium.com/max/450/1*kTDjPNUqGX8ZdLidbukheA.png"></p>
-            </section>
-            <!-- Image -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>A Blueprint for a Container</li>
-                        <li>Consists of many Layers</li>
-                    </ol>
-                </aside>
-                <h1>Image</h1>
-                <p class="fragment" data-fragment-index="1">Image of a "Container"</p>
-                <p class="fragment" data-fragment-index="2">Consists of multiple Layers</p>
-                <p class="fragment" data-fragment-index="3"><img
-                        src="https://adeeshfulay.files.wordpress.com/2017/09/docker-layers1.png"></p>
-            </section>
-            <!-- Container -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>A Container is an instanced Version of an Image</li>
-                        <li>is runnable</li>
-                        <li>Many Containers can run the same image f.e Load Balanced</li>
-                    </ol>
-                </aside>
-                <h1>Container</h1>
-                <p class="fragment" data-fragment-index="1">Instanced version of an Image</p>
-                <p class="fragment" data-fragment-index="2">Many Containers can run the same Image</p>
-                <p class="fragment" data-fragment-index="3"><img
-                        src="https://geekflare.com/wp-content/uploads/2019/07/dockerfile-697x270.png"></p>
-            </section>
-            <!-- Dockerfile -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Dockerfile is a "Programmer" Way of setting Layers</li>
-                        <li>Blueprint in a Coded Form</li>
-                        <li>Consists mostly out of Layers</li>
-                    </ol>
-                </aside>
-                <h1>Dockerfile</h1>
-                <pre><code data-trim data-noescape data-line-numbers="2|4|6|8|10|12">
-                        # Use the official image as a parent image.
-                        FROM node:current-slim
-                        # Set the working directory.
-                        WORKDIR /usr/src/app
-                        # Copy the file from your host to your current location.
-                        COPY package.json .
-                        # Run the command inside your image filesystem.
-                        RUN npm install
-                        # Add metadata to the image to describe which port the container is listening on at runtime.
-                        EXPOSE 8080
-                        # Run the specified command within the container.
-                        CMD [ "npm", "start" ]
-                        # Copy the rest of your app's source code from your host to your image filesystem.
-                        COPY . .
-                    </code></pre>
-            </section>
-            <!-- Registry -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Used to Store and distribute Docker Images</li>
-                        <li><a href="https://hub.docker.com/">We can takle a look at Dockerhub</a></li>
-                    </ol>
-                </aside>
-                <h1>Registry</h1>
-                <p class="fragment" data-fragment-index="1">Service to administrate Images</p>
-                <p class="fragment" data-fragment-index="2">Biggest One : Docker Hub</p>
-                <p class="fragment" data-fragment-index="3"><img src="https://www.itzgeek.com/wp-content/uploads/2016/07/Building-Docker-Images.png"></p>
-            </section>
-            <!-- Volume -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Space for Data</li>
-                        <li>Best Example : your Harddrive or SSD</li>
-                        <li>In Container Context its mostly a folder, which is directly mounted into your Container</li>
-                        <li>Examples Later</li>
-                    </ol>
-                </aside>
-                <h1>Volume</h1>
-                <p class="fragment" data-fragment-index="1">Mostly folder(s) on the Host System</p>
-                <p class="fragment" data-fragment-index="2">Volumes are "mounted" into a Container</p>
-                <p class="fragment" data-fragment-index="3"><img src="https://itgix.com/images/upl/shared-volume.jpg"></p>
-            </section>
-            <!-- Network -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>The Network connection of a Container</li>
-                        <li>Mostly uses the Host Systems Adapter</li>
-                        <li>Important if Ports are Exposed!</li>
-                    </ol>
-                </aside>
-                <h1>Network</h1>
-                <p class="fragment" data-fragment-index="1">Connection to the "outer" World could be Local or on the Internet</p>
-                <p class="fragment" data-fragment-index="2">The Container uses the Host's Connection and Adapter</p>
-                <p class="fragment" data-fragment-index="3"><img width="30%" src="https://miro.medium.com/max/2710/0*9Ag7iew3NVDcf-xs."></p>
-            </section>
-            <!-- Node -->
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Simply a "Worker" which is Part of a bigger Network</li>
-                        <li>Tasks by the Network Administrator / Overseer</li>
-                    </ol>
-                </aside>
-                <h1>Node</h1>
-                <p class="fragment" data-fragment-index="1">VM or physical Machine, which is a member of a Network</p>
-                <p class="fragment" data-fragment-index="3"><img src="https://docs.docker.com/engine/swarm/images/swarm-diagram.png"></p>
-            </section>
-        </section>
-        <!-- Positiv points for Containers-->
-        <section>
-            <section>
-                <h1>Positive Aspects of Containers</h1>
-            </section>
-            <section>
-                Easy Deployment on nearly every system-type
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Just what you need</li>
-                        <li>very minimal and small Kernel</li>
-                    </ol>
-                </aside>
-                Lightweight
-            </section>
-            <section>
-                CI/CD compatible (&#128064 E-Portfolio Jenkins)
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>We look at that later</li>
-                        <li>You can easy adjust the Containers f.e. If you need more Webservers</li>
-                    </ol>
-                </aside>
-                <h5>Scalable</h5>
-                <ul>
-                    <li>Horizontal</li>
-                    <li>Vertical</li>
-                </ul>
-                <br>
-                <img style="border-radius: 8px;" class="fragment"
-                     src="https://www.redswitches.com/hs-fs/hubfs/scaling-image.jpg?width=790&name=scaling-image.jpg">
-            </section>
-        </section>
-        <!-- What is Docker-->
-        <section>
-            <aside class="notes">
-                <ol>
-                    <li>So now about my Topic for the E Portfolio</li>
-                    <li>Docker is a Layer above the Operating System to Run Containers</li>
-                    <li>Uses the resources of the Host</li>
-                    <li>In short : Runs Container Images</li>
-                </ol>
-            </aside>
-            <h1>So what is Docker ?</h1>
-            <img style="border-radius: 8px;" width="30%" height="60%"
-                 src="https://golangnews.org/wp-content/uploads/2020/07/1-containers-abc-729x640.png">
-        </section>
-        <!--  Docker History -->
-        <section>
-            <section>
-                <aside class="notes">
-                    <h1>STRG und Pfeiltasten um durch Timeline zu gehen</h1>
-                    <ol>
-                        <li>Docker Inc was founded in 2010</li>
-                        <li>First intern Revision of Docker gets launched</li>
-                        <li>The Project gets imported to Git</li>
-                        <li>Published on PyCon 2013</li>
-                        <li>Creating the Moby Project for Open Research and Development of Docker</li>
-                        <li>Kubernetes Projectiv to provide Docker containers to all private public and hybrid cloud environments</li>
-                        <li>Downfall begins</li>
-                        <li>Redhat replacing Docker</li>
-                        <li>Mirandis bought Docker Inc.</li>
-                    </ol>
-                </aside>
-                <h2>The History of Docker</h2>
-		        If no timeline is shown, press down!!
-                <style>
-                    .vco-storyjs {
-                        background-color: #191919;
-                    }
-                    .vco-storyjs h1, .vco-storyjs h2, .vco-storyjs h3, .vco-storyjs h4, .vco-storyjs h5, .vco-storyjs h6 {
-                        color: #fff;
-                    }
-                    .vco-timeline .vco-navigation .timenav-background {
-                        background-color: #191919;
-                    }
-                    .vco-timeline .vco-navigation .vco-toolbar {
-                        background-color: #191919;
-                        border: 1px solid #191919;
-                    }
-                    .vco-timeline .vco-navigation .timenav-background .timenav-interval-background {
-                        background: #191919;
-                    }
-                    .vco-timeline .vco-navigation .timenav .time .time-interval-major div {
-                        color: #fff;
-                    }
-                    .vco-timeline .vco-navigation .timenav .time .time-interval div {
-                        color: #fff;
-                    }
-                    .vco-timeline .vco-navigation .vco-toolbar .zoom-in, .vco-timeline .vco-navigation .vco-toolbar .zoom-out, .vco-timeline .vco-navigation .vco-toolbar .back-home {
-                        color: #333;
-                    }
-                    .vco-storyjs .vco-feature p {
-                        color: #c7c7c7;
-                    }
-                    .vco-timeline .vco-navigation .timenav .content .marker .flag .flag-content h3, .vco-timeline .vco-navigation .timenav .content .marker .flag-small .flag-content h3 {
-                        color: #d0d0d0;
-                    }
-                </style>
-                <div id="my-timeline"></div>
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/1.png">
-            </section><section>
-                <img style="width: 80%;" src="./timeline/Backup/2.png">
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/3.png">
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/4.png">
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/5.png">
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/6.png">
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/7.png">
-            </section>
-            <section>
-                <img style="width: 80%;" src="./timeline/Backup/8.png">
-            </section>
-        </section>
-        </section>
-        <!-- Docker Architektur -->
-        <section>
-            <aside class="notes">
-                <ol>
-                    <li>Left</li>
-                    <ol>
-                        <li>Access the Container by CLI or API by the Daemon</li>
-                    </ol>
-                    <li>Middle</li>
-                    <ol>
-                        <li>Can See Images</li>
-                        <li>Local or Downloaded from HUB</li>
-                        <li>Containers -> Green Line for the Run by Daemon</li>
-                    </ol>
-                    <li>Right</li>
-                    <ol>
-                        <li>Registry could be private or DockerHub to get the Images by the Daemon</li>
-                    </ol>
-                </ol>
-            </aside>
-            <h1>Docker Architecture</h1>
-            <img src="https://www.01net.it/wp-content/uploads/sites/14/2017/07/container-devops.png">
-        </section>
-        <!-- Docker Workflow -->
-        <section>
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Typically Docker Workflow with DockerHub</li>
-                        <ol>
-                            <li>Building Image</li>
-                            <li>Upload to Docker Registry</li>
-                            <li>Run the Image by Pulling it</li>
-                        </ol>
-                    </ol>
-                </aside>
-                <h1>Docker Workflow  with DockerHub</h1>
-                <img width="60%" src="https://miro.medium.com/max/1490/0*EMmmZ8pZPRzfewJy.png">
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Here we can see a Dockerfile for the Deployment of a Node.js Server</li>
-                        <li>Adding the Base Image</li>
-                        <li>Setting Work Directory</li>
-                        <li>Copy Files (package*.json) into the Container</li>
-                        <li >Install Dependencies ("npm install")</li>
-                        <li>Copy Content</li>
-                        <li>Port Opening</li>
-                    </ol>
-                </aside>
-                <h1>Dockerfile Example</h1>
-                <pre><code data-trim data-fragment-index="1" data-line-numbers="1|2|3|4|5|6|7">
-                    # Filename: Dockerfile.build
-                    FROM node:10-alpine
-                    WORKDIR /usr/src/app
-                    COPY package*.json ./
-                    RUN npm install
-                    COPY . .
-                    EXPOSE 3000
-                </code></pre>
-                <ul>
-                    <li class="fragment" data-fragment-index="1">Adding the Base Image</li>
-                    <li class="fragment" data-fragment-index="2">Setting Work Directory</li>
-                    <li class="fragment" data-fragment-index="3">Copy Files (package*.json) into the Container</li>
-                    <li class="fragment" data-fragment-index="4">Install Dependencies ("npm install")</li>
-                    <li class="fragment" data-fragment-index="5">Copy Content</li>
-                    <li class="fragment" data-fragment-index="6">Port Opening</li>
-                </ul>
-            </section>
-        </section>
-        <!-- Live Demo -->
-        <section style="width: 100%;height: 85%;padding-top: 50px">
-            <iframe data-src="https://labs.play-with-docker.com/" width="100%" height="300%"></iframe>
-        </section>
-        <!-- For Completion -->
-        <section>
-            <section style=":not(pre) > code {
-                                display: inline !important;
-                            }">
-                <h1><a href="https://docs.docker.com/compose/">Docker Compose</a></h1>
-                <img src="https://i0.wp.com/www-stage.docker.com/blog/wp-content/uploads/2020/02/Compose.png?fit=200%2C219&ssl=1">
-                <ul>
-                    <li class="fragment" data-fragment-index="1">Defining and running multi-container Docker applications</li>
-                    <li class="fragment" data-fragment-index="2">use a YAML file to configure your applications Service</li>
-                    <li class="fragment" data-fragment-index="3">create and start all the services from your configuration</li>
-                    <ol>
-                        <li class="fragment" data-fragment-index="4">Define your app’s environment with a Dockerfile so it can be reproduced anywhere.</li>
-                        <li class="fragment" data-fragment-index="5">Define the services that make up your app in docker-compose.yml so they can be run together in an isolated environment.</li>
-                        <li class="fragment" data-fragment-index="6">Run <code style="color:red">docker-compose up</code> and Compose starts and runs your entire app.</li>
-                    </ol>
-                </ul>
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Support will get Dropped</li>
-                        <li>Mostly used for Decentralized Designes</li>
-                        <li>Load Balancing Feature</li>
-                        <li>Many Clusters on many servers can run in a Swarm</li>
-                    </ol>
-                </aside>
-                <h1><a href="https://docs.docker.com/engine/swarm/">For Completion : Docker Swarm</a></h1>
-                <img style="border-radius: 8px;width: 40%;" src="./res/swarm.png">
-            </section>
-        </section>
-        <!-- Outlooks -->
-        <section style="width: 100%;height: 85%;padding-top: 50px">
-            <section>
-                <h1>Outlooks</h1>
-                Where can you integrate Docker into your Project ? <br> <br>
-                <ul>
-                    <li class="fragment" data-fragment-index="1">Database Server</li>
-                    <li class="fragment" data-fragment-index="2">Node.js Server</li>
-                    <li class="fragment" data-fragment-index="2">Your Webapp, e.g. Angular, React</li>
-                    <li class="fragment" data-fragment-index="3">CI/CD Pipeline : Jenkins ?</li>
-                </ul>
-            </section>
-            <section>
-                <h1><a href="https://www.edureka.co/blog/docker-compose-containerizing-mean-stack-application/">Example of Angular Express and MongoDB in Docker Compose</a></h1>
-                <img width="40%" src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/10/watermark.png">  <br>
-                <ol>
-                    <li class="fragment" data-fragment-index="1">Container 1 – Angular</li>
-                    <li class="fragment" data-fragment-index="2">Container 2  – NodeJS and ExpressJS</li>
-                    <li class="fragment" data-fragment-index="3">Container 3 – MongoDB</li>
+                    <li>tracking progress of the development Team</li>
+                    <li>follow the blueprint that details the process</li>
+                    <li>for promoting new features</li>
                 </ol>
             </section>
             <section>
-                <h1>Container 1 – Angular</h1>
-                <pre><code data-trim data-fragment-index="1">
-                    FROM node:6
-                    RUN mkdir -p /usr/src/app
-                    WORKDIR /usr/src/app
-                    COPY package.json /usr/src/app
-                    RUN npm cache clean
-                    RUN npm install
-                    COPY . /usr/src/app
-                    EXPOSE 4200
-                    CMD ["npm","start"]
-                </code></pre>
+                <h1>Detailed Reports</h1>
+                <img width="50%" style="border-radius: 8px;"
+                     src="Images/jira4.png">
+            </section>
+        </section>
+        <!-- Benefits of Jira-->
+        <section>
+            <section>
+                <h1>The Benefits of Jira</h1>
+                <h2>Built for Agile and Scrum Management</h2>
+                <ol>
+                    <li>User stories: Each software product feature that needs to be developed</li>
+                    <li>Story Points: The effort you’ll need to complete your user stories</li>
+                    <li>Sprints: The time taken to complete a section of the project. A sprint can last anywhere from 1 – 4 weeks</li>
+                    <li>Easily handling because of Drag and Drop</li>
+                </ol>
             </section>
             <section>
-                <h1>Container 2  – NodeJS and ExpressJS</h1>
-                <pre><code data-trim data-fragment-index="1">
-                    FROM node:6
-                    RUN mkdir -p /usr/src/app
-                    WORKDIR /usr/src/app
-                    COPY package.json /usr/src/app
-                    RUN npm cache clean
-                    RUN npm install
-                    COPY . /usr/src/app
-                    EXPOSE 3000
-                    CMD ["npm","start"]
-                </code></pre>
+                <h1>The Benefits of Jira</h1>
+                <h2>Great for issue management</h2>
+                <ol>
+                    <li>bug tracking software</li>
+                    <li>helps find, track and report bugs</li>
+                    <li>well organized</li>
+                </ol>
             </section>
             <section>
-                <h1>Container 3 – MongoDB</h1>
-                <ul>
-                    <li>For the DB Part we have no need to Change the Image so we pull the Default one....</li>
-                </ul>
+                <h1>The Benefits of Jira</h1>
+                <h2>Highly customizable</h2>
+                <ol>
+                    <li>third party software</li>
+                    <li>add functionality from over 3000+ apps</li>
+                    <li>connect it witch communication tools etc.</li>
+                </ol>
             </section>
+        </section>
+        <section>
             <section>
-                <aside class="notes">
-                    <ol>
-                        <li>Name of the Servies</li>
-                        <li>Directory of the Docker buildfiles</li>
-                        <li>Ports which are exposed for this Container</li>
-                        <li>Link Services</li>
-                    </ol>
-                </aside>
-                <h1>Docker Compose File</h1>
-                <pre style="height:525px;"><code style="height: 60%" data-trim data-fragment-index="1" data-line-numbers="3,8,15|4,9,16|5,10|17|6,7,11,12,18,19|13,14">
-                    # Define the services/ containers to be run
-                    services:
-                    #######################
-                     angular:
-                      build: angular-app
-                      ports:
-                      - "4200:4200"
-                    #######################
-                     express:
-                      build: express-server
-                      ports:
-                      - "3000:3000"
-                      links:
-                      - database
-                    #######################
-                     database:
-                      image: mongo
-                      ports:
-                      - "27017:27017"
-                </code></pre>
+                <h1>What Are the Cons of Jira?</h1>
+                <ol>
+                    <li>Mobile app is not really usable</li>
+                    <li>File uploading size is limited</li>
+                    <li>Customizing it for first time is difficult</li>
+                </ol>
             </section>
         </section>
     </div>
-    <div class="slides" id="jenkins">
-        <!-- Title slide -->
-        <section>
-            <h2>Jenkins</h2>
-            <img src="https://www.jenkins.io/images/logos/stay-safe/stay-safe.png" alt="Jenkins Logo" width="128px">
-        </section>
-        <!-- Content -->
-        <!-- Content Overview -->
-        <section>
-            <ul>
-                <li>What is Jenkins?</li>
-                <li>A brief history of Jenkins</li>
-                <li>What do I need a build server and CI/CD for?</li>
-                <li>What is Jenkins capable of doing?</li>
-                <li>Why do I need a build server when there is GitHub actions?</li>
-                <li>How to install Jenkins</li>
-                <li>How to create a project in Jenkins</li>
-                <li>How to integrate Jenkins with GitHub</li>
-                <li>How to use Jenkins in your own project</li>
-                <li>Live Demo of Jenkins at Betterzon</li>
-            </ul>
-        </section>
-        <!-- What is Jenkins -->
-        <section>
-            <h2>What is Jenkins?</h2>
-            <img src="res/what_is_jenkins.png" alt="what is Jenkins">
-            <!-- Image src: https://acadgildsite.s3.amazonaws.com/wordpress_images/devops/What_is_Jenkins/02_CI_Image.jpg -->
-            <aside class="notes">
-                <ul>
-                    <li>Open Source: <a href="https://github.com/jenkinsci/jenkins">https://github.com/jenkinsci/jenkins</a></li>
-                    <li>Automation Server</li>
-                    <li>Highly extensible through plugins</li>
-                </ul>
-            </aside>
-            <!--
-                Source: https://www.jenkins.io/doc/
-            -->
-        </section>
-        <!-- History -->
-        <section>
-            <h2>History of Jenkins</h2>
-            <ul>
-                <li>Released February 2005 as "Hudson"</li>
-                <li>Renamed to Jenkins in 2011 after a dispute with Oracle</li>
-                <li>Both projects co-existed with Oracle claiming that Jenkins was the fork</li>
-                <li>Jenkins finally replaced Hudson in 2017</li>
-            </ul><br>
-            <img src="res/Oracle_Jenkins_Hudson_Dispute.png" alt="InfoWorld Article on Hudson Dispute">
-            <!-- Image from https://www.infoworld.com/article/2624074/oracle-hands-hudson-to-eclipse--but-jenkins-fork-seems-permanent.html -->
-            <!--
-                Source: https://en.wikipedia.org/wiki/Jenkins_(software)
-            -->
-        </section>
-        <!-- Build Server, CI/CD -->
-        <section>
-            <h2>What do I need a build server and CI/CD for?</h2>
-            <img src="https://confluence.atlassian.com/bamboo/files/289277285/289342279/2/1426549208892/CI+overview.png">
-            <aside class="notes">
-                <ul>
-                    <li>Build Servers are used for CI/CD pipelines</li>
-                    <li>Only one source of truth (the repository)<br>-> Therefore eliminates "it works on my machine"</li>
-                    <li>Parallel tasks</li>
-                    <li>
-                        Run tests:
-                        <ul>
-                            <li>Regression tests</li>
-                            <li>Performance tests</li>
-                            <li>API testing</li>
-                            <li>Static code analysis</li>
-                            <li>Security testing</li>
-                        </ul>
-                        API tests can e.g. run after the deployment was successful
-                    </li>
-                    <li>
-                        Deployment
-                        <ul>
-                            <li>Deploy to multiple environments, e.g. Staging, Testing, Production</li>
-                            <li>Manage environment variables for each environment</li>
-                            <li>Pushing components to the appropriate services</li>
-                            <li>Restarting those services so the changes get applied</li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
-            <!--
-                Source: https://deviq.com/build-server/
-                        https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html
-            -->
-        </section>
-        <!-- Capabilities -->
-        <section>
-            <h2>What is Jenkins capable of doing?</h2>
-            <img src="https://www.edureka.co/blog/wp-content/uploads/2016/10/Jenkins-integration-jenkins-tutorial-Edureka.jpg">
-            <aside class="notes">
-                Puppet -> Infrastructure as Code (e.g. Correct ports for the correct environment etc... )
-            </aside>
-        </section>
-        <!-- Why own build server -->
-        <section>
-            <h2>Why do I need a build server when there is GitHub actions?</h2>
-            <ul>
-                <li>Self-hosted</li>
-                <li>More customizable</li>
-            </ul>
-            <aside class="notes">
-                <ul>
-                    <li>More cost-efficient</li>
-                </ul>
-            </aside>
-        </section>
-        <!-- How to install -->
-        <section>
-            <section>
-                <h2>How to install Jenkins</h2>
-            </section>
-            <section>
-                <h3>... standalone</h3>
-                <pre><code data-trim data-noescape data-line-numbers="1-3|4-5|6">
-                    wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-                    sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
-                        /etc/apt/sources.list.d/jenkins.list'
-                    sudo apt-get update
-                    sudo apt-get install jenkins
-                    sudo systemctl start jenkins
-                </code></pre>
-            </section>
-            <section>
-                <h3>... via Docker</h3>
-                <pre><code data-trim data-noescape data-line-numbers="1|2">
-                    docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
-                    docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
-                </code></pre>
-            </section>
-            <section>
-                <h3>... if that was a bit too easy for you</h3>
-                <pre><code data-trim data-noescape data-line-numbers="1|2|3-12">
-                    docker network create jenkins
-                    docker image pull docker:dind
-                    docker run \
-                        --name jenkins-docker \
-                        --privileged \
-                        --network jenkins
-                        --network-alias docker \
-                        --env DOCKER_TLS_CERTDIR=/certs \
-                        --volume jenkins-docker-certs:/certs/client \
-                        --volume jenkins-data:/var/jenkins_home \
-                        --publish 2376:2376 \
-                        docker:dind
-                </code></pre>
-            </section>
-            <section>
-                <pre><code data-trim data-noescape>
-                    FROM jenkins/jenkins:2.249.3-slim
-                    USER root
-                    RUN apt-get update && apt-get install -y apt-transport-https \
-                           ca-certificates curl gnupg2 \
-                           software-properties-common
-                    RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
-                    RUN apt-key fingerprint 0EBFCD88
-                    RUN add-apt-repository \
-                           "deb [arch=amd64] https://download.docker.com/linux/debian \
-                           $(lsb_release -cs) stable"
-                    RUN apt-get update && apt-get install -y docker-ce-cli
-                    USER jenkins
-                    RUN jenkins-plugin-cli --plugins blueocean:1.24.3
-                </code></pre>
-            </section>
-            <section>
-                <pre><code data-trim data-noescape data-line-numbers="1|2">
-                    docker build -t my-docker-jenkins-image .
-                    docker run my-docker-jenkins-image
-                </code></pre>
-            </section>
-            <section>
-                <h3>... or for those who use Windows</h3>
-                <a href="https://www.jenkins.io/doc/book/installing/">https://www.jenkins.io/doc/book/installing/</a>
-                <!--
-                    Source: https://www.jenkins.io/doc/book/installing/
-                -->
-            </section>
-        </section>
-        <!-- How to create a project in Jenkins -->
-        <section>
-            <section>
-                <h2>How to create a project in Jenkins</h2>
-            </section>
-            <section>
-                <img style="width: 20%;" src="res/jenkins_new_project_1.png">
-            </section>
-            <section>
-                <img style="width: 70%;"src="res/jenkins_new_project_2.png">
-            </section>
-            <section>
-                <img src="res/jenkins_new_project_3.png">
-            </section>
-            <section>
-                <img src="res/jenkins_new_project_4.png">
-            </section>
-            <section>
-                <img src="res/jenkins_new_project_5.png">
-            </section>
-            <section>
-                <img src="res/jenkins_new_project_6.png">
-            </section>
-            <section>
-                <img src="res/jenkins_new_project_7.png">
-            </section>
-            <section>
-                <img src="res/jenkins_new_project_8.png">
-            </section>
-        </section>
-        <!-- Integrate with GitHub -->
-        <section>
-            <h2>How to integrate Jenkins with GitHub</h2>
-            <img src="https://applitools.com/wp-content/uploads/2018/11/APT_Jenkins_Gitgub_Diagram_2018-10-03-1.jpg" alt="GitHub and Jenkins Integration">
-            <aside class="notes">
-                <ul>
-                    <li>To get more practical, now we integrate Jenkins with GitHub</li>
-                </ul>
-            </aside>
-        </section>
-        <!-- How to use Jenkins in own project -->
-        <section>
-            <h2>How to use Jenkins in your own project</h2>
-            <ul>
-                <li>Running unit tests</li>
-                <li>Building the project</li>
-                <li>Running continuous tests, e.g. before a pull request can be accepted</li>
-            </ul>
-            <aside class="notes">
-                <ul>
-                    <li>Running unit tests</li>
-                    <li>Building the project</li>
-                    <li>Running continuous tests, e.g. before a pull request can be accepted</li>
-                </ul>
-            </aside>
-        </section>
-        <!-- Jenkins at Betterzon -->
-        <section>
-            <section>
-                <h2>Demo of Jenkins use in our project</h2>
-            </section>
-            <section>
-                <pre><code data-trim data-noescape data-line-numbers="1-2|4-5|6|7-13">
-                    export REPO_NAME='Mueller-Patrick/Betterzon'
-                    export JOB_NAME='Verify_Build_on_PR'
 
-                    curl "https://api.GitHub.com/repos/$REPO_NAME/statuses/$GIT_COMMIT" \
-                    -H "Content-Type: application/json" \
-                    -H "Authorization: token $GH_TOKEN" \
-                    -X POST \
-                    -d "{
-                        \"state\": \"pending\",
-                        \"context\": \"jenkins/$REPO_NAME\",
-                        \"description\": \"Jenkins\",
-                        \"target_url\": \"https://ci.betterzon.xyz/job/$JOB_NAME/$BUILD_NUMBER/console\"
-                    }"
-                </code></pre>
-            </section>
-            <section>
-                <pre><code data-trim data-noescape data-line-numbers="1-2|5|8-18|19-29|31-32">
-                    export REPO_NAME='Mueller-Patrick/Betterzon'
-                    export JOB_NAME='Verify_Build_on_PR'
-                    TEST_ERROR=0
 
-                    cd Frontend
-                    ng build || TEST_ERROR=$?
-                    cd ..
-
-                    if [ $TEST_ERROR -eq 0 ] ; then
-                        curl "https://api.GitHub.com/repos/$REPO_NAME/statuses/$GIT_COMMIT" \
-                        -H "Content-Type: application/json" \
-                        -H "Authorization: token $GH_TOKEN" \
-                        -X POST \
-                        -d "{
-                            \"state\": \"success\",
-                            \"context\": \"jenkins/$REPO_NAME\",
-                            \"description\": \"Jenkins\",
-                            \"target_url\": \"https://ci.betterzon.xyz/job/$JOB_NAME/$BUILD_NUMBER/console\"
-                        }"
-                    else
-                        curl "https://api.GitHub.com/repos/$REPO_NAME/statuses/$GIT_COMMIT" \
-                        -H "Content-Type: application/json" \
-                        -H "Authorization: token $GH_TOKEN" \
-                        -X POST \
-                        -d "{
-                            \"state\": \"failure\",
-                            \"context\": \"jenkins/$REPO_NAME\",
-                            \"description\": \"Jenkins\",
-                            \"target_url\": \"https://ci.betterzon.xyz/job/$JOB_NAME/$BUILD_NUMBER/console\"
-                        }"
-
-                        exit $TEST_ERROR
-                    fi
-                </code></pre>
-            </section>
-        </section>
-    </div>
-    <div class="slides" id="interconnect">
-        <section>
-            <h1>Interconnection</h1>
-        </section>
-        <section>
-            <section>
-                <h1><a href="https://code-maze.com/ci-jenkins-docker/">Setting up a Jenkins Instance into a Docker Container</a></h1>
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-                        <li># Starting off with the Jenkins base Image</li>
-                        <li># Installing the plugins we need using the in-built install-plugins.sh script</li>
-                        <li># Setting up environment variables for Jenkins admin user</li>
-                        <li># Skip the initial setup wizard</li>
-                        <li># Start-up scripts to set number of executors and creating the admin user</li>
-                        <li># Mounting Volume</li>
-                    </ol>
-                </aside>
-                <h1 data-fragment-index="1">The Master - Docker File</h1>
-                <pre><code data-trim data-fragment-index="2" data-line-numbers="1|3|5,6|8|10,11|13">
-                    FROM jenkins/jenkins:latest
-
-                    RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding
-
-                    ENV JENKINS_USER admin
-                    ENV JENKINS_PASS admin
-
-                    ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
-
-                    COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/
-                    COPY default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
-
-                    VOLUME /var/jenkins_home
-                </code></pre>
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/build_master.png?raw=true">
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-
-                    </ol>
-                </aside>
-                <h1 data-fragment-index="1">The Slave - Docker File</h1>
-                <pre><code data-trim data-fragment-index="2" data-line-numbers="">
-                    FROM ubuntu:16.04
-                    # Install Docker CLI in the agent
-                    RUN apt-get update && apt-get install -y apt-transport-https ca-certificates
-                    RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-                    RUN echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable" > /etc/apt/sources.list.d/docker.list
-                    RUN apt-get update && apt-get install -y docker-ce --allow-unauthenticated
-                    RUN apt-get update && apt-get install -y openjdk-8-jre curl python python-pip git
-                    RUN easy_install jenkins-webapi
-                    # Get docker-compose in the agent container
-                    .
-                    .
-                    .
-                    .
-                </code></pre>
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/build_slave.png?raw=true">
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/build_slave_complete.png?raw=true">
-            </section>
-            <section>
-                <aside class="notes">
-                    <ol>
-
-                    </ol>
-                </aside>
-                <h1 data-fragment-index="1">The Compose File</h1>
-                <pre style="height: 530px"><code data-trim data-fragment-index="2" data-line-numbers="3,9|4,10|5,11|6,7,8|12|13,14|15,16,17|18,19">
-                    version: '3.1'
-                    services:
-                        jenkins:
-                            build: jenkins-master
-                            container_name: jenkins
-                            ports:
-                                - '8080:8080'
-                                - '50000:50000'
-                        jenkins-slave:
-                            build: jenkins-slave
-                            container_name: jenkins-slave
-                            restart: always
-                            environment:
-                                - 'JENKINS_URL=http://jenkins:8080'
-                            volumes:
-                                - /var/run/docker.sock:/var/run/docker.sock  # Expose the docker daemon in the container
-                                - /home/jenkins:/home/jenkins # Avoid mysql volume mount issue
-                            depends_on:
-                                - jenkins
-                </code></pre>
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/compose.png?raw=true">
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/running_containers.png?raw=true">
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/jenkins_login.png?raw=true">
-            </section>
-            <section>
-                <img src="https://github.com/Mueller-Patrick/SE-e-Portfolio/blob/master/Code_Interconnection/res/screenshots/docker_slave.png?raw=true">
-            </section>
-        </section>
-        <section>
-            <h1>Using Docker IN Jenkins</h1>
-            <img src="https://code-maze.com/wp-content/uploads/2018/07/HighLevelFlow.png">
-        </section>
-    </div>
     <div class="slides" id="endslide">
         <section>
-            <h1>Hope you enjoyed <br>our e-Portfolio ❤️</h1>
+            <h1>Hope you enjoyed <br>my e-Portfolio ❤️</h1>
             <br>
-            <h3><a target="_blank" href="https://github.com/Mueller-Patrick/SE-e-Portfolio">Let's start your 🐳 & Jenkins Adventure <br> with our Examples on Github</a></h3>
+            <h3><a target="_blank" href="https://github.com/yiggalow/eportfolioSE">Let's start your Jira Adventure <br> with our Examples on Github</a></h3>
             <br>
-            <h6>Also feel free to look in our <a target="_blank" href="https://raw.githubusercontent.com/Mueller-Patrick/SE-e-Portfolio/master/index.html">Presentation - Sourcecode</a> and <a target="_blank" href="https://revealjs.com/">reveal.js</a></h6>
+            <h6>Also feel free to look in my <a target="_blank"
+                                                 href="https://github.com/yiggalow/eportfolioSE/blob/master/docs/index.html">Presentation
+                - Sourcecode</a> and <a target="_blank" href="https://revealjs.com/">reveal.js</a></h6>
         </section>
     </div>
 </div>
