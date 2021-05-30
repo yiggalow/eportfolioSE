@@ -1,5 +1,5 @@
 # Link to the slides as online presentation:
-[Slides](https://mueller-patrick.github.io/SE-e-Portfolio)
+[Slides](https://github.com/yiggalow/eportfolioSE)
 
 # Jira
 
