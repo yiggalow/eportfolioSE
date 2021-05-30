@@ -1,5 +1,5 @@
 # Link to the slides as online presentation:
-[Slides](https://github.com/yiggalow/eportfolioSE)
+[Slides](https://yiggalow.github.io/eportfolioSE)
 
 # Jira
 
